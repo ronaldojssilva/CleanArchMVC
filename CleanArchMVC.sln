@@ -18,10 +18,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.Application", "CleanArchMVC.Application\CleanArchMVC.Application.csproj", "{AC70A88A-D61F-4092-9901-0EF7C06582CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMVC.WebUI", "CleanArchMVC.WebUI\CleanArchMVC.WebUI.csproj", "{0ADC3BD8-FD93-4877-A44F-A5D89329103B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66EDA420-9F4F-46E2-A926-0D332CBE4CB8} = {66EDA420-9F4F-46E2-A926-0D332CBE4CB8}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{149222E1-6DF1-4729-8995-12CE50D0FB04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{D15F8D40-A016-4F31-A611-5320C73FF163}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{D15F8D40-A016-4F31-A611-5320C73FF163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
