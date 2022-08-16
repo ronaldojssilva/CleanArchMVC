@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Identity\" />
-    <Folder Include="EntitiesConfiguration\" />
   </ItemGroup>
 
   <ItemGroup>
