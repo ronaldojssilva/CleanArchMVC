@@ -1,3 +1,5 @@
+using CleanArchMvc.Infra.IoC;
+
 namespace CleanArchMVC.WebAPI
 {
     public class Program
@@ -12,6 +14,8 @@ namespace CleanArchMVC.WebAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddInfrastructureAPI(builder.Configuration);
 
             var app = builder.Build();
 
