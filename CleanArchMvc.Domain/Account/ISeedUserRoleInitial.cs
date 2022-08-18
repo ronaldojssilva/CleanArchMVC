@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Account
 {
-    internal interface ISeedUserRoleInitial
+    public interface ISeedUserRoleInitial
     {
         void SeedUsers();
         void SeedRoles();
