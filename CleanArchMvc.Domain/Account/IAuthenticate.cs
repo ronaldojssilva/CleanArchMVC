@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Account
 {
-    internal interface IAuthenticate
+    public interface IAuthenticate
     {
         Task<bool> Authenticate(string email, string password);
 
