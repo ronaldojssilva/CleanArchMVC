@@ -45,5 +45,11 @@ namespace CleanArchMvc.Infra.IoC
 
             return services;
         }
+        //public static IServiceCollection SeedUsers(this IServiceCollection services, ISeedUserRoleInitial seedUserRoleInitial)
+        //{
+        //    seedUserRoleInitial.SeedRoles();
+        //    seedUserRoleInitial.SeedUsers();
+        //    return services;
+        //}
     }
 }
