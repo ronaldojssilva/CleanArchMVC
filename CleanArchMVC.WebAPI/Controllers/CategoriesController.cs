@@ -48,5 +48,34 @@ namespace CleanArchMVC.WebAPI.Controllers
             return new CreatedAtRouteResult("GetCategory", new { id = categoryDto.Id },
                 categoryDto);
         }
+
+        [HttpPut]
+        public async Task<ActionResult> Put(int id, [FromBody] CategoryDTO categoryDto)
+        {
+            if (categoryDto == null)
+                return BadRequest();
+
+            if (id != categoryDto.Id)
+                return BadRequest();
+
+            await _categoryService.Update(categoryDto);
+
+            return Ok(categoryDto);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<CategoryDTO>> Delete(int id)
+        {
+            var category = await _categoryService.GetById(id);
+            if (category == null)
+            {
+                return NotFound("Category not found");
+            }
+
+            await _categoryService.Remove(id);
+
+            return Ok(category);
+
+        }
     }
 }
