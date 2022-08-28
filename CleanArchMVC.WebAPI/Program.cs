@@ -29,8 +29,10 @@ namespace CleanArchMVC.WebAPI
                 app.UseSwaggerUI();
             }
 
+            app.UseStatusCodePages();
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
