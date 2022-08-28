@@ -1,4 +1,4 @@
-using CleanArchMvc.Infra.IoC;
+using CleanArchMVC.Infra.IoC;
 
 namespace CleanArchMVC.WebAPI
 {
@@ -16,6 +16,8 @@ namespace CleanArchMVC.WebAPI
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddInfrastructureAPI(builder.Configuration);
+            //Ativar autenticacao e validar o token
+            builder.Services.AddInfrastructureJWT(builder.Configuration);
 
             var app = builder.Build();
 

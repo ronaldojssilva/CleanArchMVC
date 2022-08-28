@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchMvc.Infra.IoC
+namespace CleanArchMVC.Infra.IoC
 {
     public static class DependencyInjectionAPI
     {

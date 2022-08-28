@@ -1,5 +1,5 @@
 ﻿using CleanArchMvc.Domain.Account;
-using CleanArchMvc.Infra.IoC;
+using CleanArchMVC.Infra.IoC;
 
 namespace CleanArchMvc.WebUI
 {
