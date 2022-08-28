@@ -18,6 +18,7 @@ namespace CleanArchMVC.WebAPI
             builder.Services.AddInfrastructureAPI(builder.Configuration);
             //Ativar autenticacao e validar o token
             builder.Services.AddInfrastructureJWT(builder.Configuration);
+            builder.Services.AddInfrastructureSwagger();
 
             var app = builder.Build();
 
